@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace WpfTesteTecnico.Models.Enums
 {
-    internal class Status
+    public enum Status
     {
+        Pendente,
+        Pago,
+        Enviado,
+        Recebido
     }
 }

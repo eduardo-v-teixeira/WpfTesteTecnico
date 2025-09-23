@@ -6,13 +6,10 @@ using System.Threading.Tasks;
 
 namespace WpfTesteTecnico.Models.Enums
 {
-    public class FormaPagamento
+    public enum FormaPagamento
     {
-        public enum TipoPagamento
-        {
-            Dinheiro,
-            CartaoCredito,
-            Boleto,
-        }
+        Dinheiro,
+        CartaoCredito,
+        Boleto
     }
 }
