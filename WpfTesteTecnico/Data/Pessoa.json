@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WpfTesteTecnico.Models.Enums
+namespace WpfTesteTecnico.Data
 {
-    public enum FormaPagamento
+    class Pessoa
     {
-        Dinheiro,
-        Cartao,
-        Boleto
     }
 }

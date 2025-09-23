@@ -15,17 +15,6 @@ namespace WpfTesteTecnico.Models
         public string? Endereco { get; set; }
         public List<Pedido> Pedidos { get; set; }
 
-        public Pessoa()
-        {
-            //criando um id unico para cada pessoa e de maneira automatica
-            Id = Guid.NewGuid();
-            Pedidos = new List<Pedido>();
-        }
-        public Pessoa(string nome, int cpf, string endereco)
-        {
-            Nome = nome;
-            Cpf = cpf;
-            Endereco = endereco;
-        }
+
     }
 }

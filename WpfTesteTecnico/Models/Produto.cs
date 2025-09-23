@@ -10,7 +10,7 @@ namespace WpfTesteTecnico.Models
     public class Produto
     {
         public Guid Id { get; private set; }
-        public string ?Nome { get; set; }
+        public string Nome { get; set; }
         public int Codigo { get; set; }
         public decimal Valor { get; set; }
 

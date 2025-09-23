@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WpfTesteTecnico.Models.Enums
+namespace WpfTesteTecnico.Services
 {
-    public enum FormaPagamento
+    public class PedidoService
     {
-        Dinheiro,
-        Cartao,
-        Boleto
     }
 }

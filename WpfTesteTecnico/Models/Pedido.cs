@@ -14,7 +14,7 @@ namespace WpfTesteTecnico.Models
         public List<Produto> Produtos { get; set; }
         public decimal ValorTotal { get; set; }
         public DateTime DataVenda { get; set; }
-        public FormaPagamento FormaPagamento { get; set; } 
+        public FormaPagamento FormaPagamento { get; set; }
         public Status Status { get; set; }
 
     }
