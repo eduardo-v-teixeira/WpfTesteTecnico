@@ -9,13 +9,12 @@ namespace WpfTesteTecnico.Models
 {
     public class Pedido
     {
-        public Guid Id { get; set; }
+        public Guid Id { get; set; } = Guid.NewGuid();
         public Pessoa Pessoa { get; set; }
-        public List<Produto> Produtos { get; set; }
-        public decimal ValorTotal { get; set; }
-        public DateTime DataVenda { get; set; }
+        public List<ItemPedido> Produtos { get; set; } = new List<ItemPedido>();
+        public decimal ValorTotal => Produtos.Sum(i => i.Produto.Valor * i.Quantidade);
+        public DateTime DataVenda { get; set; } = DateTime.Now;
         public FormaPagamento FormaPagamento { get; set; }
-        public Status Status { get; set; }
-
+        public Status Status { get; set; } = Status.Pendente;
     }
 }
