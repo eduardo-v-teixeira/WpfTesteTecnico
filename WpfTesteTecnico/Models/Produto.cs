@@ -12,18 +12,13 @@ namespace WpfTesteTecnico.Models
         public Guid Id { get; private set; }
         public string ?Nome { get; set; }
         public int Codigo { get; set; }
-        public double Valor { get; set; }
+        public decimal Valor { get; set; }
 
         public Produto()
         {
             //criando um id unico para cada produto e de maneira automatica
             Id = Guid.NewGuid();
-        }
-        public Produto(string nome, int codigo, double valor)
-        {
-            Nome = nome;
-            Codigo = codigo;
-            Valor = valor;
+            Valor = 0.00m;
         }
     }
 }
